@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Order.css">
+</head>
+<body>
+    <div class="back">
+    <div class="container">
+        <h1>Watch Order Form</h1>
+        <form id="watch-order-form">
+            <label for="watch-name">Watch Name:</label>
+            <input type="text" id="watch-name" name="watchName" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="watch-type">Watch Type:</label>
+            <select id="watch-type" name="watchType" required>
+                <option value="">Select Watch Type</option>
+                <option value="Analog">Analog</option>
+                <option value="Digital">Digital</option>
+                <option value="Smart">Smart</option>
+            </select>
+
+            <label for="delivery-option">Delivery Option:</label>
+            <input  type="radio" id="standard" name="deliveryOption" value="Standard" checked>
+            <label for="standard">Standard</label>
+            <input type="radio" id="express" name="deliveryOption" value="Express">
+            <label for="express">Express</label>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additionalInfo" rows="4"></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</html>
+
+    
+    
+</body>
+</html>
